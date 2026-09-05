@@ -1,0 +1,283 @@
+[27-Aug-2026 23:11:26 Europe/Berlin] PHP Warning:  Undefined property: DI\Container::$controller in C:\biblioteca\src\api\Routes\LeitorRouter.php on line 25
+[27-Aug-2026 23:11:26 Europe/Berlin] PHP Warning:  Undefined property: DI\Container::$controller in C:\biblioteca\src\api\Routes\LeitorRouter.php on line 26
+[27-Aug-2026 23:11:26 Europe/Berlin] PHP Warning:  Undefined property: DI\Container::$controller in C:\biblioteca\src\api\Routes\LeitorRouter.php on line 27
+[27-Aug-2026 23:11:26 Europe/Berlin] PHP Warning:  Undefined property: DI\Container::$controller in C:\biblioteca\src\api\Routes\LeitorRouter.php on line 28
+[27-Aug-2026 23:11:26 Europe/Berlin] PHP Warning:  Undefined property: DI\Container::$controller in C:\biblioteca\src\api\Routes\LeitorRouter.php on line 29
+[27-Aug-2026 23:11:26 Europe/Berlin] PHP Warning:  Undefined property: DI\Container::$controller in C:\biblioteca\src\api\Routes\LeitorRouter.php on line 30
+[27-Aug-2026 23:11:30 Europe/Berlin] ❌ Falha ao conectar ao MySQL: SQLSTATE[HY000] [2002] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+[27-Aug-2026 23:11:30 Europe/Berlin] PHP Warning:  Undefined property: DI\Container::$controller in C:\biblioteca\src\api\Routes\LeitorRouter.php on line 25
+[27-Aug-2026 23:11:30 Europe/Berlin] PHP Warning:  Undefined property: DI\Container::$controller in C:\biblioteca\src\api\Routes\LeitorRouter.php on line 26
+[27-Aug-2026 23:11:30 Europe/Berlin] PHP Warning:  Undefined property: DI\Container::$controller in C:\biblioteca\src\api\Routes\LeitorRouter.php on line 27
+[27-Aug-2026 23:11:30 Europe/Berlin] PHP Warning:  Undefined property: DI\Container::$controller in C:\biblioteca\src\api\Routes\LeitorRouter.php on line 28
+[27-Aug-2026 23:11:30 Europe/Berlin] PHP Warning:  Undefined property: DI\Container::$controller in C:\biblioteca\src\api\Routes\LeitorRouter.php on line 29
+[27-Aug-2026 23:11:30 Europe/Berlin] PHP Warning:  Undefined property: DI\Container::$controller in C:\biblioteca\src\api\Routes\LeitorRouter.php on line 30
+[27-Aug-2026 23:11:34 Europe/Berlin] ❌ Falha ao conectar ao MySQL: SQLSTATE[HY000] [2002] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+[27-Aug-2026 23:11:37 Europe/Berlin] PHP Warning:  Undefined property: DI\Container::$controller in C:\biblioteca\src\api\Routes\LeitorRouter.php on line 25
+[27-Aug-2026 23:11:37 Europe/Berlin] PHP Warning:  Undefined property: DI\Container::$controller in C:\biblioteca\src\api\Routes\LeitorRouter.php on line 26
+[27-Aug-2026 23:11:37 Europe/Berlin] PHP Warning:  Undefined property: DI\Container::$controller in C:\biblioteca\src\api\Routes\LeitorRouter.php on line 27
+[27-Aug-2026 23:11:37 Europe/Berlin] PHP Warning:  Undefined property: DI\Container::$controller in C:\biblioteca\src\api\Routes\LeitorRouter.php on line 28
+[27-Aug-2026 23:11:37 Europe/Berlin] PHP Warning:  Undefined property: DI\Container::$controller in C:\biblioteca\src\api\Routes\LeitorRouter.php on line 29
+[27-Aug-2026 23:11:37 Europe/Berlin] PHP Warning:  Undefined property: DI\Container::$controller in C:\biblioteca\src\api\Routes\LeitorRouter.php on line 30
+[27-Aug-2026 23:11:41 Europe/Berlin] ❌ Falha ao conectar ao MySQL: SQLSTATE[HY000] [2002] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+[27-Aug-2026 23:14:08 Europe/Berlin] PHP Warning:  Undefined property: DI\Container::$controller in C:\biblioteca\src\api\Routes\LeitorRouter.php on line 25
+[27-Aug-2026 23:14:08 Europe/Berlin] PHP Warning:  Undefined property: DI\Container::$controller in C:\biblioteca\src\api\Routes\LeitorRouter.php on line 26
+[27-Aug-2026 23:14:08 Europe/Berlin] PHP Warning:  Undefined property: DI\Container::$controller in C:\biblioteca\src\api\Routes\LeitorRouter.php on line 27
+[27-Aug-2026 23:14:08 Europe/Berlin] PHP Warning:  Undefined property: DI\Container::$controller in C:\biblioteca\src\api\Routes\LeitorRouter.php on line 28
+[27-Aug-2026 23:14:08 Europe/Berlin] PHP Warning:  Undefined property: DI\Container::$controller in C:\biblioteca\src\api\Routes\LeitorRouter.php on line 29
+[27-Aug-2026 23:14:08 Europe/Berlin] PHP Warning:  Undefined property: DI\Container::$controller in C:\biblioteca\src\api\Routes\LeitorRouter.php on line 30
+[02-Sep-2026 22:51:54 Europe/Berlin] ⬆️ Conectado ao banco Biblioteca com sucesso!
+[02-Sep-2026 22:52:04 Europe/Berlin] ⬆️ CategoriaDAO::__construct()
+[02-Sep-2026 22:52:04 Europe/Berlin] ⬆️ CategoriaService::__construct()
+[02-Sep-2026 22:52:04 Europe/Berlin] ⬆️ LivroDAO::__construct()
+[02-Sep-2026 22:52:04 Europe/Berlin] ⬆️ CategoriaController::__construct()
+[02-Sep-2026 22:52:04 Europe/Berlin] 🔵 CategoriaController::findAllController()
+[02-Sep-2026 22:52:04 Europe/Berlin] 🟣 CategoriaService::findAllService()
+[02-Sep-2026 22:52:04 Europe/Berlin] 🟢 CategoriaDAO::findAll()
+[02-Sep-2026 22:52:04 Europe/Berlin] ⬆️ Conectado ao banco Biblioteca com sucesso!
+[02-Sep-2026 22:52:30 Europe/Berlin] ⬆️ AutorDAO::__construct()
+[02-Sep-2026 22:52:30 Europe/Berlin] ⬆️ LivroDAO::__construct()
+[02-Sep-2026 22:52:30 Europe/Berlin] 🟢 AutorDAO::findAll()
+[02-Sep-2026 22:52:30 Europe/Berlin] ⬆️ Conectado ao banco Biblioteca com sucesso!
+[02-Sep-2026 22:52:36 Europe/Berlin] ⬆️ AutorDAO::__construct()
+[02-Sep-2026 22:52:36 Europe/Berlin] ⬆️ LivroDAO::__construct()
+[02-Sep-2026 22:52:36 Europe/Berlin] 🟢 AutorDAO::create()
+[02-Sep-2026 22:52:36 Europe/Berlin] ⬆️ Conectado ao banco Biblioteca com sucesso!
+[02-Sep-2026 22:52:36 Europe/Berlin] ⬆️ AutorDAO::__construct()
+[02-Sep-2026 22:52:36 Europe/Berlin] ⬆️ LivroDAO::__construct()
+[02-Sep-2026 22:52:36 Europe/Berlin] 🟢 AutorDAO::findAll()
+[02-Sep-2026 22:52:36 Europe/Berlin] ⬆️ Conectado ao banco Biblioteca com sucesso!
+[02-Sep-2026 22:52:42 Europe/Berlin] ⬆️ AutorDAO::__construct()
+[02-Sep-2026 22:52:42 Europe/Berlin] ⬆️ LivroDAO::__construct()
+[02-Sep-2026 22:52:42 Europe/Berlin] 🟢 AutorDAO::findById()
+[02-Sep-2026 22:52:42 Europe/Berlin] 🟢 AutorDAO::findByField()
+[02-Sep-2026 22:52:42 Europe/Berlin] ⬆️ Conectado ao banco Biblioteca com sucesso!
+[02-Sep-2026 22:52:42 Europe/Berlin] 🟢 AutorDAO::update()
+[02-Sep-2026 22:52:42 Europe/Berlin] ⬆️ AutorDAO::__construct()
+[02-Sep-2026 22:52:42 Europe/Berlin] ⬆️ LivroDAO::__construct()
+[02-Sep-2026 22:52:42 Europe/Berlin] 🟢 AutorDAO::findAll()
+[02-Sep-2026 22:52:42 Europe/Berlin] ⬆️ Conectado ao banco Biblioteca com sucesso!
+[02-Sep-2026 22:52:47 Europe/Berlin] ⬆️ AutorDAO::__construct()
+[02-Sep-2026 22:52:47 Europe/Berlin] ⬆️ LivroDAO::__construct()
+[02-Sep-2026 22:52:47 Europe/Berlin] 🟢 AutorDAO::findById()
+[02-Sep-2026 22:52:47 Europe/Berlin] 🟢 AutorDAO::findByField()
+[02-Sep-2026 22:52:47 Europe/Berlin] ⬆️ Conectado ao banco Biblioteca com sucesso!
+[02-Sep-2026 22:52:47 Europe/Berlin] 🟢 LivroDAO::findByField()
+[02-Sep-2026 22:52:47 Europe/Berlin] 🟢 AutorDAO::delete()
+[02-Sep-2026 22:52:48 Europe/Berlin] ⬆️ AutorDAO::__construct()
+[02-Sep-2026 22:52:48 Europe/Berlin] ⬆️ LivroDAO::__construct()
+[02-Sep-2026 22:52:48 Europe/Berlin] 🟢 AutorDAO::findAll()
+[02-Sep-2026 22:52:48 Europe/Berlin] ⬆️ Conectado ao banco Biblioteca com sucesso!
+[02-Sep-2026 22:52:50 Europe/Berlin] ⬆️ CategoriaDAO::__construct()
+[02-Sep-2026 22:52:50 Europe/Berlin] ⬆️ CategoriaService::__construct()
+[02-Sep-2026 22:52:50 Europe/Berlin] ⬆️ LivroDAO::__construct()
+[02-Sep-2026 22:52:50 Europe/Berlin] ⬆️ CategoriaController::__construct()
+[02-Sep-2026 22:52:50 Europe/Berlin] 🔵 CategoriaController::findAllController()
+[02-Sep-2026 22:52:50 Europe/Berlin] 🟣 CategoriaService::findAllService()
+[02-Sep-2026 22:52:50 Europe/Berlin] 🟢 CategoriaDAO::findAll()
+[02-Sep-2026 22:52:50 Europe/Berlin] ⬆️ Conectado ao banco Biblioteca com sucesso!
+[02-Sep-2026 22:52:53 Europe/Berlin] ⬆️ CategoriaDAO::__construct()
+[02-Sep-2026 22:52:53 Europe/Berlin] ⬆️ CategoriaService::__construct()
+[02-Sep-2026 22:52:53 Europe/Berlin] ⬆️ LivroDAO::__construct()
+[02-Sep-2026 22:52:53 Europe/Berlin] ⬆️ CategoriaController::__construct()
+[02-Sep-2026 22:52:53 Europe/Berlin] 🔵 CategoriaController::createController()
+[02-Sep-2026 22:52:53 Europe/Berlin] 🟣 CategoriaService::createService()
+[02-Sep-2026 22:52:53 Europe/Berlin] 🟢 CategoriaDAO::findByField()
+[02-Sep-2026 22:52:53 Europe/Berlin] ⬆️ Conectado ao banco Biblioteca com sucesso!
+[02-Sep-2026 22:52:53 Europe/Berlin] ⬆️ CategoriaDAO::__construct()
+[02-Sep-2026 22:52:53 Europe/Berlin] ⬆️ CategoriaService::__construct()
+[02-Sep-2026 22:52:53 Europe/Berlin] ⬆️ LivroDAO::__construct()
+[02-Sep-2026 22:52:53 Europe/Berlin] ⬆️ CategoriaController::__construct()
+[02-Sep-2026 22:52:53 Europe/Berlin] 🔵 CategoriaController::findAllController()
+[02-Sep-2026 22:52:53 Europe/Berlin] 🟣 CategoriaService::findAllService()
+[02-Sep-2026 22:52:53 Europe/Berlin] 🟢 CategoriaDAO::findAll()
+[02-Sep-2026 22:52:53 Europe/Berlin] ⬆️ Conectado ao banco Biblioteca com sucesso!
+[02-Sep-2026 22:52:57 Europe/Berlin] ⬆️ CategoriaDAO::__construct()
+[02-Sep-2026 22:52:57 Europe/Berlin] ⬆️ CategoriaService::__construct()
+[02-Sep-2026 22:52:57 Europe/Berlin] ⬆️ LivroDAO::__construct()
+[02-Sep-2026 22:52:57 Europe/Berlin] ⬆️ CategoriaController::__construct()
+[02-Sep-2026 22:52:57 Europe/Berlin] 🔵 CategoriaController::createController()
+[02-Sep-2026 22:52:57 Europe/Berlin] 🟣 CategoriaService::createService()
+[02-Sep-2026 22:52:57 Europe/Berlin] 🟢 CategoriaDAO::findByField()
+[02-Sep-2026 22:52:57 Europe/Berlin] ⬆️ Conectado ao banco Biblioteca com sucesso!
+[02-Sep-2026 22:52:57 Europe/Berlin] 🟢 CategoriaDAO::create()
+[02-Sep-2026 22:52:57 Europe/Berlin] ⬆️ CategoriaDAO::__construct()
+[02-Sep-2026 22:52:57 Europe/Berlin] ⬆️ CategoriaService::__construct()
+[02-Sep-2026 22:52:57 Europe/Berlin] ⬆️ LivroDAO::__construct()
+[02-Sep-2026 22:52:57 Europe/Berlin] ⬆️ CategoriaController::__construct()
+[02-Sep-2026 22:52:57 Europe/Berlin] 🔵 CategoriaController::findAllController()
+[02-Sep-2026 22:52:57 Europe/Berlin] 🟣 CategoriaService::findAllService()
+[02-Sep-2026 22:52:57 Europe/Berlin] 🟢 CategoriaDAO::findAll()
+[02-Sep-2026 22:52:57 Europe/Berlin] ⬆️ Conectado ao banco Biblioteca com sucesso!
+[02-Sep-2026 22:52:58 Europe/Berlin] ⬆️ LivroDAO::__construct()
+[02-Sep-2026 22:52:58 Europe/Berlin] ⬆️ AutorDAO::__construct()
+[02-Sep-2026 22:52:58 Europe/Berlin] ⬆️ CategoriaDAO::__construct()
+[02-Sep-2026 22:52:58 Europe/Berlin] ⬆️ LivroService::__construct()
+[02-Sep-2026 22:52:58 Europe/Berlin] ⬆️ LivroController::__construct()
+[02-Sep-2026 22:52:58 Europe/Berlin] 🟣 LivroService::findAllService()
+[02-Sep-2026 22:52:58 Europe/Berlin] 🟢 LivroDAO::findAll()
+[02-Sep-2026 22:52:58 Europe/Berlin] ⬆️ Conectado ao banco Biblioteca com sucesso!
+[02-Sep-2026 22:52:58 Europe/Berlin] ⬆️ AutorDAO::__construct()
+[02-Sep-2026 22:52:58 Europe/Berlin] ⬆️ LivroDAO::__construct()
+[02-Sep-2026 22:52:58 Europe/Berlin] 🟢 AutorDAO::findAll()
+[02-Sep-2026 22:52:58 Europe/Berlin] ⬆️ Conectado ao banco Biblioteca com sucesso!
+[02-Sep-2026 22:52:58 Europe/Berlin] ⬆️ CategoriaDAO::__construct()
+[02-Sep-2026 22:52:58 Europe/Berlin] ⬆️ CategoriaService::__construct()
+[02-Sep-2026 22:52:58 Europe/Berlin] ⬆️ LivroDAO::__construct()
+[02-Sep-2026 22:52:58 Europe/Berlin] ⬆️ CategoriaController::__construct()
+[02-Sep-2026 22:52:58 Europe/Berlin] 🔵 CategoriaController::findAllController()
+[02-Sep-2026 22:52:58 Europe/Berlin] 🟣 CategoriaService::findAllService()
+[02-Sep-2026 22:52:58 Europe/Berlin] 🟢 CategoriaDAO::findAll()
+[02-Sep-2026 22:52:58 Europe/Berlin] ⬆️ Conectado ao banco Biblioteca com sucesso!
+[02-Sep-2026 22:53:07 Europe/Berlin] ⬆️ LivroDAO::__construct()
+[02-Sep-2026 22:53:07 Europe/Berlin] ⬆️ AutorDAO::__construct()
+[02-Sep-2026 22:53:07 Europe/Berlin] ⬆️ CategoriaDAO::__construct()
+[02-Sep-2026 22:53:07 Europe/Berlin] ⬆️ LivroService::__construct()
+[02-Sep-2026 22:53:07 Europe/Berlin] ⬆️ LivroController::__construct()
+[02-Sep-2026 22:53:07 Europe/Berlin] 🟣 LivroService::deleteService()
+[02-Sep-2026 22:53:07 Europe/Berlin] 🟢 LivroDAO::findById()
+[02-Sep-2026 22:53:07 Europe/Berlin] 🟢 LivroDAO::findByField()
+[02-Sep-2026 22:53:07 Europe/Berlin] ⬆️ Conectado ao banco Biblioteca com sucesso!
+[02-Sep-2026 22:53:07 Europe/Berlin] 🟢 LivroDAO::delete()
+[02-Sep-2026 22:53:08 Europe/Berlin] ⬆️ LivroDAO::__construct()
+[02-Sep-2026 22:53:08 Europe/Berlin] ⬆️ AutorDAO::__construct()
+[02-Sep-2026 22:53:08 Europe/Berlin] ⬆️ CategoriaDAO::__construct()
+[02-Sep-2026 22:53:08 Europe/Berlin] ⬆️ LivroService::__construct()
+[02-Sep-2026 22:53:08 Europe/Berlin] ⬆️ LivroController::__construct()
+[02-Sep-2026 22:53:08 Europe/Berlin] 🟣 LivroService::findAllService()
+[02-Sep-2026 22:53:08 Europe/Berlin] 🟢 LivroDAO::findAll()
+[02-Sep-2026 22:53:08 Europe/Berlin] ⬆️ Conectado ao banco Biblioteca com sucesso!
+[02-Sep-2026 22:53:09 Europe/Berlin] ⬆️ Conectado ao banco Biblioteca com sucesso!
+[02-Sep-2026 22:53:14 Europe/Berlin] ⬆️ Conectado ao banco Biblioteca com sucesso!
+[02-Sep-2026 22:53:14 Europe/Berlin] ⬆️ Conectado ao banco Biblioteca com sucesso!
+[02-Sep-2026 22:53:18 Europe/Berlin] ⬆️ Conectado ao banco Biblioteca com sucesso!
+[02-Sep-2026 22:53:19 Europe/Berlin] ⬆️ Conectado ao banco Biblioteca com sucesso!
+[02-Sep-2026 22:53:20 Europe/Berlin] ⬆️ LivroDAO::__construct()
+[02-Sep-2026 22:53:20 Europe/Berlin] ⬆️ Conectado ao banco Biblioteca com sucesso!
+[02-Sep-2026 22:53:36 Europe/Berlin] ⬆️ LivroDAO::__construct()
+[02-Sep-2026 22:53:36 Europe/Berlin] 🟢 LivroDAO::findById()
+[02-Sep-2026 22:53:36 Europe/Berlin] 🟢 LivroDAO::findByField()
+[02-Sep-2026 22:53:36 Europe/Berlin] ⬆️ Conectado ao banco Biblioteca com sucesso!
+[02-Sep-2026 22:53:36 Europe/Berlin] ⬆️ LivroDAO::__construct()
+[02-Sep-2026 22:53:36 Europe/Berlin] ⬆️ Conectado ao banco Biblioteca com sucesso!
+[02-Sep-2026 22:53:47 Europe/Berlin] ⬆️ LivroDAO::__construct()
+[02-Sep-2026 22:53:47 Europe/Berlin] 🟢 LivroDAO::findById()
+[02-Sep-2026 22:53:47 Europe/Berlin] 🟢 LivroDAO::findByField()
+[02-Sep-2026 22:53:47 Europe/Berlin] ⬆️ Conectado ao banco Biblioteca com sucesso!
+[02-Sep-2026 22:53:47 Europe/Berlin] ⬆️ LivroDAO::__construct()
+[02-Sep-2026 22:53:47 Europe/Berlin] ⬆️ Conectado ao banco Biblioteca com sucesso!
+[02-Sep-2026 22:53:55 Europe/Berlin] ⬆️ LivroDAO::__construct()
+[02-Sep-2026 22:53:55 Europe/Berlin] ⬆️ Conectado ao banco Biblioteca com sucesso!
+[02-Sep-2026 22:53:55 Europe/Berlin] 🟢 LivroDAO::findById()
+[02-Sep-2026 22:53:55 Europe/Berlin] 🟢 LivroDAO::findByField()
+[02-Sep-2026 22:53:55 Europe/Berlin] ⬆️ LivroDAO::__construct()
+[02-Sep-2026 22:53:55 Europe/Berlin] ⬆️ Conectado ao banco Biblioteca com sucesso!
+[02-Sep-2026 22:54:03 Europe/Berlin] ⬆️ LivroDAO::__construct()
+[02-Sep-2026 22:54:03 Europe/Berlin] ⬆️ Conectado ao banco Biblioteca com sucesso!
+[02-Sep-2026 22:54:03 Europe/Berlin] 🟢 LivroDAO::findById()
+[02-Sep-2026 22:54:03 Europe/Berlin] 🟢 LivroDAO::findByField()
+[02-Sep-2026 22:54:03 Europe/Berlin] ⬆️ LivroDAO::__construct()
+[02-Sep-2026 22:54:03 Europe/Berlin] ⬆️ Conectado ao banco Biblioteca com sucesso!
+[03-Sep-2026 13:05:11 Europe/Berlin] ⬆️ Conectado ao banco Biblioteca com sucesso!
+[03-Sep-2026 13:05:21 Europe/Berlin] ⬆️ AutorDAO::__construct()
+[03-Sep-2026 13:05:21 Europe/Berlin] ⬆️ LivroDAO::__construct()
+[03-Sep-2026 13:05:21 Europe/Berlin] 🟢 AutorDAO::findAll()
+[03-Sep-2026 13:05:21 Europe/Berlin] ⬆️ Conectado ao banco Biblioteca com sucesso!
+[03-Sep-2026 13:05:25 Europe/Berlin] ⬆️ AutorDAO::__construct()
+[03-Sep-2026 13:05:25 Europe/Berlin] ⬆️ LivroDAO::__construct()
+[03-Sep-2026 13:05:25 Europe/Berlin] 🟢 AutorDAO::findAll()
+[03-Sep-2026 13:05:25 Europe/Berlin] ⬆️ Conectado ao banco Biblioteca com sucesso!
+[03-Sep-2026 13:05:28 Europe/Berlin] ⬆️ CategoriaDAO::__construct()
+[03-Sep-2026 13:05:28 Europe/Berlin] ⬆️ CategoriaService::__construct()
+[03-Sep-2026 13:05:28 Europe/Berlin] ⬆️ LivroDAO::__construct()
+[03-Sep-2026 13:05:28 Europe/Berlin] ⬆️ CategoriaController::__construct()
+[03-Sep-2026 13:05:28 Europe/Berlin] 🔵 CategoriaController::findAllController()
+[03-Sep-2026 13:05:28 Europe/Berlin] 🟣 CategoriaService::findAllService()
+[03-Sep-2026 13:05:28 Europe/Berlin] 🟢 CategoriaDAO::findAll()
+[03-Sep-2026 13:05:28 Europe/Berlin] ⬆️ Conectado ao banco Biblioteca com sucesso!
+[03-Sep-2026 13:05:29 Europe/Berlin] ⬆️ AutorDAO::__construct()
+[03-Sep-2026 13:05:29 Europe/Berlin] ⬆️ LivroDAO::__construct()
+[03-Sep-2026 13:05:29 Europe/Berlin] 🟢 AutorDAO::findAll()
+[03-Sep-2026 13:05:29 Europe/Berlin] ⬆️ Conectado ao banco Biblioteca com sucesso!
+[03-Sep-2026 13:05:29 Europe/Berlin] ⬆️ CategoriaDAO::__construct()
+[03-Sep-2026 13:05:29 Europe/Berlin] ⬆️ CategoriaService::__construct()
+[03-Sep-2026 13:05:29 Europe/Berlin] ⬆️ LivroDAO::__construct()
+[03-Sep-2026 13:05:29 Europe/Berlin] ⬆️ CategoriaController::__construct()
+[03-Sep-2026 13:05:29 Europe/Berlin] 🔵 CategoriaController::findAllController()
+[03-Sep-2026 13:05:29 Europe/Berlin] 🟣 CategoriaService::findAllService()
+[03-Sep-2026 13:05:29 Europe/Berlin] 🟢 CategoriaDAO::findAll()
+[03-Sep-2026 13:05:29 Europe/Berlin] ⬆️ Conectado ao banco Biblioteca com sucesso!
+[03-Sep-2026 13:05:29 Europe/Berlin] ⬆️ LivroDAO::__construct()
+[03-Sep-2026 13:05:29 Europe/Berlin] ⬆️ AutorDAO::__construct()
+[03-Sep-2026 13:05:29 Europe/Berlin] ⬆️ CategoriaDAO::__construct()
+[03-Sep-2026 13:05:29 Europe/Berlin] ⬆️ LivroService::__construct()
+[03-Sep-2026 13:05:29 Europe/Berlin] ⬆️ LivroController::__construct()
+[03-Sep-2026 13:05:29 Europe/Berlin] 🟣 LivroService::findAllService()
+[03-Sep-2026 13:05:29 Europe/Berlin] 🟢 LivroDAO::findAll()
+[03-Sep-2026 13:05:29 Europe/Berlin] ⬆️ Conectado ao banco Biblioteca com sucesso!
+[03-Sep-2026 13:05:29 Europe/Berlin] ⬆️ Conectado ao banco Biblioteca com sucesso!
+[03-Sep-2026 13:05:30 Europe/Berlin] ⬆️ LivroDAO::__construct()
+[03-Sep-2026 13:05:30 Europe/Berlin] ⬆️ Conectado ao banco Biblioteca com sucesso!
+[03-Sep-2026 13:05:40 Europe/Berlin] ⬆️ LivroDAO::__construct()
+[03-Sep-2026 13:05:40 Europe/Berlin] ⬆️ Conectado ao banco Biblioteca com sucesso!
+[03-Sep-2026 13:05:41 Europe/Berlin] ⬆️ LivroDAO::__construct()
+[03-Sep-2026 13:05:41 Europe/Berlin] ⬆️ Conectado ao banco Biblioteca com sucesso!
+[03-Sep-2026 13:05:45 Europe/Berlin] ⬆️ Conectado ao banco Biblioteca com sucesso!
+[03-Sep-2026 13:08:51 Europe/Berlin] ⬆️ Conectado ao banco Biblioteca com sucesso!
+[03-Sep-2026 13:09:17 Europe/Berlin] ⬆️ CategoriaDAO::__construct()
+[03-Sep-2026 13:09:17 Europe/Berlin] ⬆️ CategoriaService::__construct()
+[03-Sep-2026 13:09:17 Europe/Berlin] ⬆️ LivroDAO::__construct()
+[03-Sep-2026 13:09:17 Europe/Berlin] ⬆️ CategoriaController::__construct()
+[03-Sep-2026 13:09:17 Europe/Berlin] 🔵 CategoriaController::findAllController()
+[03-Sep-2026 13:09:17 Europe/Berlin] 🟣 CategoriaService::findAllService()
+[03-Sep-2026 13:09:17 Europe/Berlin] 🟢 CategoriaDAO::findAll()
+[03-Sep-2026 13:09:17 Europe/Berlin] ⬆️ Conectado ao banco Biblioteca com sucesso!
+[03-Sep-2026 13:09:17 Europe/Berlin] ⬆️ AutorDAO::__construct()
+[03-Sep-2026 13:09:17 Europe/Berlin] ⬆️ LivroDAO::__construct()
+[03-Sep-2026 13:09:17 Europe/Berlin] 🟢 AutorDAO::findAll()
+[03-Sep-2026 13:09:17 Europe/Berlin] ⬆️ Conectado ao banco Biblioteca com sucesso!
+[03-Sep-2026 13:10:08 Europe/Berlin] ⬆️ AutorDAO::__construct()
+[03-Sep-2026 13:10:08 Europe/Berlin] ⬆️ LivroDAO::__construct()
+[03-Sep-2026 13:10:08 Europe/Berlin] 🟢 AutorDAO::findAll()
+[03-Sep-2026 13:10:08 Europe/Berlin] ⬆️ Conectado ao banco Biblioteca com sucesso!
+[05-Sep-2026 14:16:18 Europe/Berlin] ⬆️ Conectado ao banco Biblioteca com sucesso!
+[05-Sep-2026 14:16:27 Europe/Berlin] ⬆️ Conectado ao banco Biblioteca com sucesso!
+[05-Sep-2026 14:16:29 Europe/Berlin] ⬆️ AutorDAO::__construct()
+[05-Sep-2026 14:16:29 Europe/Berlin] ⬆️ LivroDAO::__construct()
+[05-Sep-2026 14:16:29 Europe/Berlin] 🟢 AutorDAO::findAll()
+[05-Sep-2026 14:16:29 Europe/Berlin] ⬆️ Conectado ao banco Biblioteca com sucesso!
+[05-Sep-2026 14:16:41 Europe/Berlin] ⬆️ Conectado ao banco Biblioteca com sucesso!
+[05-Sep-2026 14:16:54 Europe/Berlin] ⬆️ AutorDAO::__construct()
+[05-Sep-2026 14:16:54 Europe/Berlin] ⬆️ LivroDAO::__construct()
+[05-Sep-2026 14:16:54 Europe/Berlin] 🟢 AutorDAO::findAll()
+[05-Sep-2026 14:16:54 Europe/Berlin] ⬆️ Conectado ao banco Biblioteca com sucesso!
+[05-Sep-2026 14:16:56 Europe/Berlin] ⬆️ CategoriaDAO::__construct()
+[05-Sep-2026 14:16:56 Europe/Berlin] ⬆️ CategoriaService::__construct()
+[05-Sep-2026 14:16:56 Europe/Berlin] ⬆️ LivroDAO::__construct()
+[05-Sep-2026 14:16:56 Europe/Berlin] ⬆️ CategoriaController::__construct()
+[05-Sep-2026 14:16:56 Europe/Berlin] 🔵 CategoriaController::findAllController()
+[05-Sep-2026 14:16:56 Europe/Berlin] 🟣 CategoriaService::findAllService()
+[05-Sep-2026 14:16:56 Europe/Berlin] 🟢 CategoriaDAO::findAll()
+[05-Sep-2026 14:16:56 Europe/Berlin] ⬆️ Conectado ao banco Biblioteca com sucesso!
+[05-Sep-2026 14:16:57 Europe/Berlin] ⬆️ AutorDAO::__construct()
+[05-Sep-2026 14:16:57 Europe/Berlin] ⬆️ LivroDAO::__construct()
+[05-Sep-2026 14:16:57 Europe/Berlin] 🟢 AutorDAO::findAll()
+[05-Sep-2026 14:16:57 Europe/Berlin] ⬆️ Conectado ao banco Biblioteca com sucesso!
+[05-Sep-2026 14:16:57 Europe/Berlin] ⬆️ LivroDAO::__construct()
+[05-Sep-2026 14:16:57 Europe/Berlin] ⬆️ AutorDAO::__construct()
+[05-Sep-2026 14:16:57 Europe/Berlin] ⬆️ CategoriaDAO::__construct()
+[05-Sep-2026 14:16:57 Europe/Berlin] ⬆️ LivroService::__construct()
+[05-Sep-2026 14:16:57 Europe/Berlin] ⬆️ LivroController::__construct()
+[05-Sep-2026 14:16:57 Europe/Berlin] 🟣 LivroService::findAllService()
+[05-Sep-2026 14:16:57 Europe/Berlin] 🟢 LivroDAO::findAll()
+[05-Sep-2026 14:16:57 Europe/Berlin] ⬆️ Conectado ao banco Biblioteca com sucesso!
+[05-Sep-2026 14:16:57 Europe/Berlin] ⬆️ CategoriaDAO::__construct()
+[05-Sep-2026 14:16:57 Europe/Berlin] ⬆️ CategoriaService::__construct()
+[05-Sep-2026 14:16:57 Europe/Berlin] ⬆️ LivroDAO::__construct()
+[05-Sep-2026 14:16:57 Europe/Berlin] ⬆️ CategoriaController::__construct()
+[05-Sep-2026 14:16:57 Europe/Berlin] 🔵 CategoriaController::findAllController()
+[05-Sep-2026 14:16:57 Europe/Berlin] 🟣 CategoriaService::findAllService()
+[05-Sep-2026 14:16:57 Europe/Berlin] 🟢 CategoriaDAO::findAll()
+[05-Sep-2026 14:16:57 Europe/Berlin] ⬆️ Conectado ao banco Biblioteca com sucesso!
+[05-Sep-2026 14:16:58 Europe/Berlin] ⬆️ Conectado ao banco Biblioteca com sucesso!
+[05-Sep-2026 14:16:59 Europe/Berlin] ⬆️ LivroDAO::__construct()
+[05-Sep-2026 14:16:59 Europe/Berlin] ⬆️ Conectado ao banco Biblioteca com sucesso!

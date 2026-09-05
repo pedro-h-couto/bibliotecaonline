@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Categorias - Biblioteca</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+            <nav class="navbar">
+        <a href="dashboard.html" class="navbar-brand">
+            <span class="logo-emoji">📚</span>
+            Biblioteca Online
+        </a>
+        <ul class="navbar-nav">
+            <li><a href="autores.html" class="">✍️ Autores</a></li>
+            <li><a href="categorias.html" class="active">🏷️ Categorias</a></li>
+            <li><a href="livros.html" class="">📖 Livros</a></li>
+            <li><a href="leitores.html" class="">👥 Leitores</a></li>
+            <li><a href="emprestimos.html" class="">🔄 Empréstimos</a></li>
+        </ul>
+        <div class="navbar-actions">
+            <span id="usuarioNome"></span>
+            <button onclick="logout()">🚪 Sair</button>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="form-section">
+            <h3 id="formTitle">Nova Categoria</h3>
+            <form id="categoriaForm">
+                <input type="hidden" id="idCategoria">
+                <div class="form-group">
+                    <label>Nome da Categoria</label>
+                    <input type="text" id="nomeCategoria" required>
+                </div>
+                <button type="submit">Salvar</button>
+                <button type="button" class="secondary" onclick="resetForm()">Cancelar</button>
+                <div id="mensagem"></div>
+            </form>
+        </div>
+        <div class="list-section">
+            <h3>Lista de Categorias</h3>
+            <table id="tabelaCategorias">
+                <thead><tr><th>ID</th><th>Nome</th><th>Ações</th></tr></thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="js/auth.js"></script>
+    <script>
+        const form = document.getElementById('categoriaForm');
+        const tbody = document.querySelector('#tabelaCategorias tbody');
+
+        async function carregar() {
+            try {
+                const res = await fetch(`${API_URL}/categorias`, {headers: authHeaders()});
+                const data = await res.json();
+                tbody.innerHTML = '';
+                if (data.success && data.data.categorias) {
+                    data.data.categorias.forEach(c => {
+                        tbody.innerHTML += `
+                            <tr>
+                                <td>${c.idCategoria}</td>
+                                <td>${c.nomeCategoria}</td>
+                                <td class="actions">
+                                    <button onclick="editar(${c.idCategoria}, '${c.nomeCategoria}')">✏️ Editar</button>
+                                    <button class="danger" onclick="excluir(${c.idCategoria})">🗑️ Excluir</button>
+                                </td>
+                            </tr>`;
+                    });
+                }
+            } catch (e) { showMessage('mensagem', 'Erro ao carregar', 'error'); }
+        }
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const id = document.getElementById('idCategoria').value;
+            const payload = {categoria: {nomeCategoria: document.getElementById('nomeCategoria').value}};
+            const url = id ? `${API_URL}/categorias/${id}` : `${API_URL}/categorias`;
+            const method = id ? 'PUT' : 'POST';
+
+            try {
+                const res = await fetch(url, {method, headers: authHeaders(), body: JSON.stringify(payload)});
+                const data = await res.json();
+                showMessage('mensagem', data.message, data.success ? 'success' : 'error');
+                resetForm(); carregar();
+            } catch (e) { showMessage('mensagem', 'Erro ao salvar', 'error'); }
+        });
+
+        function editar(id, nome) {
+            document.getElementById('idCategoria').value = id;
+            document.getElementById('nomeCategoria').value = nome;
+            document.getElementById('formTitle').textContent = 'Editar Categoria';
+        }
+
+        function resetForm() {
+            form.reset(); document.getElementById('idCategoria').value = '';
+            document.getElementById('formTitle').textContent = 'Nova Categoria';
+        }
+
+        async function excluir(id) {
+            if (!confirm('Deseja excluir?')) return;
+            try {
+                const res = await fetch(`${API_URL}/categorias/${id}`, {method: 'DELETE', headers: authHeaders()});
+                const data = await res.json(); alert(data.message); carregar();
+            } catch (e) { alert('Erro ao excluir'); }
+        }
+
+        carregar();
+    </script>
+</body>
+</html>

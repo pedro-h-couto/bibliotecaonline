@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Biblioteca Online</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="dashboard.html" class="navbar-brand">
+            <span class="logo-emoji">📚</span>
+            Biblioteca Online
+        </a>
+        <ul class="navbar-nav">
+            <li><a href="autores.html" class="active">✍️ Autores</a></li>
+            <li><a href="categorias.html">🏷️ Categorias</a></li>
+            <li><a href="livros.html">📖 Livros</a></li>
+            <li><a href="leitores.html">👥 Leitores</a></li>
+            <li><a href="emprestimos.html">🔄 Empréstimos</a></li>
+        </ul>
+        <div class="navbar-actions">
+            <span id="usuarioNome"></span>
+            <button onclick="logout()">🚪 Sair</button>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Banner -->
+        <div class="banner">
+            <div class="banner-content">
+                <h2>📚 Bem-vindo à Biblioteca Online</h2>
+                <p>Gerencie seu acervo com facilidade e eficiência</p>
+            </div>
+        </div>
+
+        <!-- Cards de navegação -->
+        <div class="cards">
+            <a href="autores.html" class="card">
+                <span class="card-emoji">✍️</span>
+                Autores
+            </a>
+            <a href="categorias.html" class="card">
+                <span class="card-emoji">🏷️</span>
+                Categorias
+            </a>
+            <a href="livros.html" class="card">
+                <span class="card-emoji">📖</span>
+                Livros
+            </a>
+            <a href="leitores.html" class="card">
+                <span class="card-emoji">👥</span>
+                Leitores
+            </a>
+            <a href="emprestimos.html" class="card">
+                <span class="card-emoji">🔄</span>
+                Empréstimos
+            </a>
+        </div>
+
+        <!-- Livros em destaque -->
+        <div class="livros-destaque">
+            <h3><span class="section-emoji">📖</span> Livros em Destaque</h3>
+            <div class="livros-grid">
+                <div class="livro-card">
+                    <img src="images/pequeno-principe.jpg" alt="O Pequeno Príncipe">
+                    <div class="livro-card-info">
+                        <h4>O Pequeno Príncipe</h4>
+                        <p>Antoine de Saint-Exupéry</p>
+                    </div>
+                </div>
+                <div class="livro-card">
+                    <img src="images/dom-casmurro.jpg" alt="Dom Casmurro">
+                    <div class="livro-card-info">
+                        <h4>Dom Casmurro</h4>
+                        <p>Machado de Assis</p>
+                    </div>
+                </div>
+                <div class="livro-card">
+                    <img src="images/1984.jpg" alt="1984">
+                    <div class="livro-card-info">
+                        <h4>1984</h4>
+                        <p>George Orwell</p>
+                    </div>
+                </div>
+                <div class="livro-card">
+                    <img src="images/hobbit.jpg" alt="O Hobbit">
+                    <div class="livro-card-info">
+                        <h4>O Hobbit</h4>
+                        <p>J.R.R. Tolkien</p>
+                    </div>
+                </div>
+                <div class="livro-card">
+                    <img src="images/sherlock.jpg" alt="Sherlock Holmes">
+                    <div class="livro-card-info">
+                        <h4>Sherlock Holmes</h4>
+                        <p>Arthur Conan Doyle</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/auth.js"></script>
+    <script>
+        async function carregarDashboard() {
+            try {
+                const res = await fetch(`${API_URL}/`, {
+                    headers: authHeaders()
+                });
+                const data = await res.json();
+                if (!data.success && res.status === 401) {
+                    logout();
+                    return;
+                }
+            } catch (e) {
+                console.error(e);
+            }
+        }
+
+        const token = getToken();
+        if (token) {
+            try {
+                const payload = JSON.parse(atob(token.split('.')[1]));
+                document.getElementById('usuarioNome').textContent = '👤 ' + (payload.nome || 'Usuário');
+            } catch (e) {}
+        }
+
+        carregarDashboard();
+    </script>
+</body>
+</html>

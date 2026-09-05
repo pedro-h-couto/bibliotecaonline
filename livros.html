@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Livros - Biblioteca</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+            <nav class="navbar">
+        <a href="dashboard.html" class="navbar-brand">
+            <span class="logo-emoji">📚</span>
+            Biblioteca Online
+        </a>
+        <ul class="navbar-nav">
+            <li><a href="autores.html" class="">✍️ Autores</a></li>
+            <li><a href="categorias.html" class="">🏷️ Categorias</a></li>
+            <li><a href="livros.html" class="active">📖 Livros</a></li>
+            <li><a href="leitores.html" class="">👥 Leitores</a></li>
+            <li><a href="emprestimos.html" class="">🔄 Empréstimos</a></li>
+        </ul>
+        <div class="navbar-actions">
+            <span id="usuarioNome"></span>
+            <button onclick="logout()">🚪 Sair</button>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="form-section">
+            <h3 id="formTitle">Novo Livro</h3>
+            <form id="livroForm">
+                <input type="hidden" id="idLivro">
+                <div class="form-row">
+                    <div class="form-group"><label>Título</label><input type="text" id="titulo" required></div>
+                    <div class="form-group"><label>Ano Publicação</label><input type="number" id="anoPublicacao" required></div>
+                    <div class="form-group"><label>Quantidade</label><input type="number" id="quantidade" required></div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Autor</label>
+                        <select id="idAutor" required><option value="">Selecione...</option></select>
+                    </div>
+                    <div class="form-group">
+                        <label>Categoria</label>
+                        <select id="idCategoria" required><option value="">Selecione...</option></select>
+                    </div>
+                </div>
+                <button type="submit">Salvar</button>
+                <button type="button" class="secondary" onclick="resetForm()">Cancelar</button>
+                <div id="mensagem"></div>
+            </form>
+        </div>
+        <div class="list-section">
+            <h3>Lista de Livros</h3>
+            <table id="tabelaLivros">
+                <thead><tr><th>ID</th><th>Título</th><th>Ano</th><th>Qtd</th><th>Autor</th><th>Categoria</th><th>Ações</th></tr></thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="js/auth.js"></script>
+    <script>
+        const form = document.getElementById('livroForm');
+        const tbody = document.querySelector('#tabelaLivros tbody');
+
+        async function carregarSelects() {
+            try {
+                const [r1, r2] = await Promise.all([
+                    fetch(`${API_URL}/autores`, {headers: authHeaders()}),
+                    fetch(`${API_URL}/categorias`, {headers: authHeaders()})
+                ]);
+                const autores = await r1.json();
+                const cats = await r2.json();
+                const s1 = document.getElementById('idAutor');
+                const s2 = document.getElementById('idCategoria');
+                s1.innerHTML = '<option value="">Selecione...</option>';
+                s2.innerHTML = '<option value="">Selecione...</option>';
+                autores.data.autores.forEach(a => s1.innerHTML += `<option value="${a.idAutor}">${a.nome}</option>`);
+                cats.data.categorias.forEach(c => s2.innerHTML += `<option value="${c.idCategoria}">${c.nomeCategoria}</option>`);
+            } catch(e){}
+        }
+
+        async function carregar() {
+            try {
+                const res = await fetch(`${API_URL}/livros`, {headers: authHeaders()});
+                const data = await res.json();
+                tbody.innerHTML = '';
+                if (data.success && data.data.livros) {
+                    data.data.livros.forEach(l => {
+                        tbody.innerHTML += `
+                            <tr>
+                                <td>${l.idLivro}</td>
+                                <td>${l.titulo}</td>
+                                <td>${l.anoPublicacao}</td>
+                                <td>${l.quantidade}</td>
+                                <td>${l.autor ? l.autor.nome : ''}</td>
+                                <td>${l.categoria ? l.categoria.nomeCategoria : ''}</td>
+                                <td class="actions">
+                                    <button onclick="editar(${l.idLivro}, '${l.titulo}', ${l.anoPublicacao}, ${l.quantidade}, ${l.autor.idAutor}, ${l.categoria.idCategoria})">✏️ Editar</button>
+                                    <button class="danger" onclick="excluir(${l.idLivro})">🗑️ Excluir</button>
+                                </td>
+                            </tr>`;
+                    });
+                }
+            } catch (e) { showMessage('mensagem', 'Erro ao carregar livros', 'error'); }
+        }
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const id = document.getElementById('idLivro').value;
+            const payload = {
+                livro: {
+                    titulo: document.getElementById('titulo').value,
+                    anoPublicacao: parseInt(document.getElementById('anoPublicacao').value),
+                    quantidade: parseInt(document.getElementById('quantidade').value),
+                    autor: {idAutor: parseInt(document.getElementById('idAutor').value)},
+                    categoria: {idCategoria: parseInt(document.getElementById('idCategoria').value)}
+                }
+            };
+            const url = id ? `${API_URL}/livros/${id}` : `${API_URL}/livros`;
+            const method = id ? 'PUT' : 'POST';
+
+            try {
+                const res = await fetch(url, {method, headers: authHeaders(), body: JSON.stringify(payload)});
+                const data = await res.json();
+                showMessage('mensagem', data.message, data.success ? 'success' : 'error');
+                resetForm(); carregar();
+            } catch (e) { showMessage('mensagem', 'Erro ao salvar', 'error'); }
+        });
+
+        function editar(id, titulo, ano, qtd, idAutor, idCat) {
+            document.getElementById('idLivro').value = id;
+            document.getElementById('titulo').value = titulo;
+            document.getElementById('anoPublicacao').value = ano;
+            document.getElementById('quantidade').value = qtd;
+            document.getElementById('idAutor').value = idAutor;
+            document.getElementById('idCategoria').value = idCat;
+            document.getElementById('formTitle').textContent = 'Editar Livro';
+        }
+
+        function resetForm() {
+            form.reset(); document.getElementById('idLivro').value = '';
+            document.getElementById('formTitle').textContent = 'Novo Livro';
+        }
+
+        async function excluir(id) {
+            if (!confirm('Deseja excluir?')) return;
+            try {
+                const res = await fetch(`${API_URL}/livros/${id}`, {method: 'DELETE', headers: authHeaders()});
+                const data = await res.json(); alert(data.message); carregar();
+            } catch (e) { alert('Erro ao excluir'); }
+        }
+
+        carregarSelects(); carregar();
+    </script>
+</body>
+</html>

@@ -1,0 +1,3 @@
+Rode c:\xampp\php\php.exe -S localhost:8080
+Acesse http://localhost:8080/login.html
+UPDATE Usuario SET senha = '$2b$10$SiUmV/tvXm5FC3F8ldNLyOzJsz7m9U3826TDoyijTROi8TQRo/4ti' WHERE email = 'admin@biblioteca.com';
